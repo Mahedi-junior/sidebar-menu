@@ -3,9 +3,13 @@
     font-family: "Roboto", sans-serif;
     /* font-family: "Bebas Neue", sans-serif; */
 }
+body{
+    display: flex;
+}
+
 .sidebar{
     width: 180px;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #111827;
     color: #9ca3af;
     display: flex;
@@ -22,6 +26,9 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #4b4b4b;
+}
+.sidebar-top{
+    /* color: white; */
 }
 .sidebar-bottom{
     border: none;
@@ -82,3 +89,93 @@ color: white;
 .light{
     background-color: #f3f4f6;
 }
+
+@media screen and (max-width: 576px) {
+    .sidebar{
+        width: 50px;
+    }
+    .brand,.list-item-text{
+        display: none;
+    }
+    .sidebar-bottom{
+        flex-direction: column;  
+    }
+    .color-box{
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+}
+
+.reamingDiv{
+    margin-left: 3px;
+    width: 100%;
+    background-color: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: 700;
+    color: wheat;
+}
+
+
+.reamingDark{
+    margin-left: 3px;
+    width: 100%;
+    background-color: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: 700;
+    color: wheat;
+}
+.reamingNight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: 700;
+    margin-left: 3px;
+    width: 100%;
+    background-color: #312e81;
+    color: rgb(0, 0, 255);
+}
+.reamingLight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+    font-weight: 700;
+    margin-left: 3px;
+    width: 100%;
+    background-color: #f3f4f6;
+}
+
+.sidebar.dark{
+    background-color: #111827;
+    color: #f3f4f6;
+}
+.list-item.active.dark{
+    background-color: #d1d5db;
+}
+
+.sidebar.night{
+    background-color: #312e81;
+    color: #b4bbc7;
+}
+.list-item.active.night{
+    background-color: #4338ca;
+}
+
+
+.sidebar.light{
+    background-color: #f3f4f6;
+    color: #111827;
+}
+.list-item.active.light{
+    /* background-color: #ffffff; */
+    background-color: #374151;
+    background-color: #dd3636;
+}
+
