@@ -128,7 +128,7 @@ color: white;
     justify-content: center;
     font-size: 55px;
     font-weight: 700;
-    color: wheat;
+    color: white;
 }
 .reamingNight{
     display: flex;
@@ -139,7 +139,7 @@ color: white;
     margin-left: 3px;
     width: 100%;
     background-color: #312e81;
-    color: rgb(0, 0, 255);
+    color: wheat;
 }
 .reamingLight{
     display: flex;
